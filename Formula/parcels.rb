@@ -1,25 +1,25 @@
 class Parcels < Formula
   desc "Minimal package tracking"
   homepage "https://github.com/stevedylandev/andromeda"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/parcels/0.1.1/parcels-aarch64-apple-darwin.tar.xz"
-      sha256 "0b785ef2a12c9c79850f5e67fe89822da198af8f2233e3bb997e823060193308"
+      url "https://github.com/stevedylandev/andromeda/releases/download/parcels/0.1.2/parcels-aarch64-apple-darwin.tar.xz"
+      sha256 "783414fc68484bd3e424d40ef44e883db34b0b3d7787f990a9f187ba156c0e4a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/parcels/0.1.1/parcels-x86_64-apple-darwin.tar.xz"
-      sha256 "833d8f7b32ac916dc56b5d00afb7c6090584ee9cc37ff1f4cd53dfe433163adf"
+      url "https://github.com/stevedylandev/andromeda/releases/download/parcels/0.1.2/parcels-x86_64-apple-darwin.tar.xz"
+      sha256 "80ef219bd7e0446b00a40ec1cf5fa1b66f95cdd6a288c7c106d7ea78fa791908"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/parcels/0.1.1/parcels-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b81d660b935903509c71df0f98f7812f58f51d45ce293ba7e4cc2094e6786067"
+      url "https://github.com/stevedylandev/andromeda/releases/download/parcels/0.1.2/parcels-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8a578f11cf2cb4ff283bf609b2362c2a75a51521da7db5d8f22f56fc01991bff"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/parcels/0.1.1/parcels-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0c71ea2be5ebde4ee650d663b9face38364f6dbc33a178d3eaae5b558e65c113"
+      url "https://github.com/stevedylandev/andromeda/releases/download/parcels/0.1.2/parcels-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8f49113d41a6286bd40c020d71940b26a41d5dec8d8e2ccab57c7166170718a2"
     end
   end
   license "MIT"
