@@ -1,25 +1,25 @@
 class SippSo < Formula
   desc "Minimal code sharing - single binary for web server, CLI, and TUI"
   homepage "https://sipp.so"
-  version "0.1.5"
+  version "0.1.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/sipp/releases/download/v0.1.5/sipp-so-aarch64-apple-darwin.tar.xz"
-      sha256 "b88ecb0e172c6dd0e536380d485ef63fa2f6bb9cccdf3b45594523cee30d5c17"
+      url "https://github.com/stevedylandev/andromeda/releases/download/sipp-so/0.1.6/sipp-so-aarch64-apple-darwin.tar.xz"
+      sha256 "e5fd36dd12611df968cd49f58c244e1625d0df3508be0c59bc8940c404735bfc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/sipp/releases/download/v0.1.5/sipp-so-x86_64-apple-darwin.tar.xz"
-      sha256 "023ae77454e76b8cb7b97e105aa6bf6fcbdd4be5dd11834e8c7fc2d9b62ba0e8"
+      url "https://github.com/stevedylandev/andromeda/releases/download/sipp-so/0.1.6/sipp-so-x86_64-apple-darwin.tar.xz"
+      sha256 "6a9eb59b484e62ea662556385fa80498eb796b3c696aeea588179be422aaea4a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/sipp/releases/download/v0.1.5/sipp-so-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f230afd43954e04e18ece9783902102fefa7cb1b7cfebf9b8eb3368ef2d44dcb"
+      url "https://github.com/stevedylandev/andromeda/releases/download/sipp-so/0.1.6/sipp-so-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "62d1795e63dbb0f3276326088c7ffeee5505d3df4bb0ad6620c8be1070bbe4b8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/sipp/releases/download/v0.1.5/sipp-so-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b445ddc827de738115a874241ea8a9c2734ee763a6d8b93b9c90755e6fda74d1"
+      url "https://github.com/stevedylandev/andromeda/releases/download/sipp-so/0.1.6/sipp-so-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "03c1d8f649f5d5300f29fbf7744c767aef323e75f34bb142739fa1d4aedbd8aa"
     end
   end
   license "MIT"
