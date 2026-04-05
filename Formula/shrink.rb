@@ -1,25 +1,25 @@
 class Shrink < Formula
   desc "Minimal image compression and resizing service"
   homepage "https://github.com/stevedylandev/andromeda"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/shrink/0.1.1/shrink-aarch64-apple-darwin.tar.xz"
-      sha256 "8e159a874986e4d19d0a4b46f40c18ae2fbb45b72f532502f41a72b22de24ce9"
+      url "https://github.com/stevedylandev/andromeda/releases/download/shrink/0.1.2/shrink-aarch64-apple-darwin.tar.xz"
+      sha256 "4dca8bea4b3a0353b6f36475cb3730638489bf2caf11895861d87266c2d07239"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/shrink/0.1.1/shrink-x86_64-apple-darwin.tar.xz"
-      sha256 "bc6e4a9d36ae0fc712f04819f4bfa7d5288402fc228f3fe24d87b25b42f1e09f"
+      url "https://github.com/stevedylandev/andromeda/releases/download/shrink/0.1.2/shrink-x86_64-apple-darwin.tar.xz"
+      sha256 "19dafb7d06d4fc73690367ff323c82ca504cd84bf51e5a885b13c26bd77d0b73"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/shrink/0.1.1/shrink-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8fbc3ccf98f339c413786abd2b0076e3fc39dc9df65bfb98c0fc262ce9fcb81c"
+      url "https://github.com/stevedylandev/andromeda/releases/download/shrink/0.1.2/shrink-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2ddb35514a2400065b56ede6fd377678509e69dcabca56ca636df9b939f4f892"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/shrink/0.1.1/shrink-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4d90aaa783256128c0ae2301f804eb44e55ebbb00373b526d45221b60a4b8c79"
+      url "https://github.com/stevedylandev/andromeda/releases/download/shrink/0.1.2/shrink-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "deaba9e6c0ad7a1d0d070d6e2bebedd5267f26df2427f94506796675f1ae1208"
     end
   end
   license "MIT"
