@@ -1,25 +1,25 @@
 class Posts < Formula
   desc "CMS blog with admin interface"
   homepage "https://github.com/stevedylandev/andromeda"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/posts/0.1.2/posts-aarch64-apple-darwin.tar.xz"
-      sha256 "2014cb0a8a9d35018539e9111f9d69dcb2d0baa1ba9bec770bcd2081f51427a7"
+      url "https://github.com/stevedylandev/andromeda/releases/download/posts/0.1.3/posts-aarch64-apple-darwin.tar.xz"
+      sha256 "2368a653b24da610cf6d391af3bd2388609555f369d61fce50f355a483685b12"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/posts/0.1.2/posts-x86_64-apple-darwin.tar.xz"
-      sha256 "16000d7568a4125380cb20ac66586081d9be754a6c9c43910c8b151439086637"
+      url "https://github.com/stevedylandev/andromeda/releases/download/posts/0.1.3/posts-x86_64-apple-darwin.tar.xz"
+      sha256 "511c718f9c35a5c41d9e5eaadf7ff6e61b8bdc884effb794df530fa15a73d804"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/posts/0.1.2/posts-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "95ca5fbf5d3affe6d23c97b975559e0edb236a219d1fb96f6143b898f56a2e39"
+      url "https://github.com/stevedylandev/andromeda/releases/download/posts/0.1.3/posts-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f8d634006f2d67eb165a25f01b577861a09f9eb494fd4099d27139dba8269f85"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/posts/0.1.2/posts-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1d0e695c6a32cbfdaca15300c92a0154e82a6b5767dcbc542ec416d3e53bc779"
+      url "https://github.com/stevedylandev/andromeda/releases/download/posts/0.1.3/posts-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "6a13e042c66b3d94f5ed3fce05370a38420a41bd0b00e40f9e559f8ea79b528e"
     end
   end
   license "MIT"
