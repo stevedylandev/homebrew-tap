@@ -1,25 +1,25 @@
 class Cellar < Formula
   desc "Personal wine tasting log"
   homepage "https://github.com/stevedylandev/andromeda"
-  version "0.1.3"
+  version "0.1.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/cellar/0.1.3/cellar-aarch64-apple-darwin.tar.xz"
-      sha256 "ea1768ef240d0342efb9d42859cafaccc82e57d70a9801ed075d8f6622dab8e1"
+      url "https://github.com/stevedylandev/andromeda/releases/download/cellar/0.1.4/cellar-aarch64-apple-darwin.tar.xz"
+      sha256 "9cfa5be1e62cf54a94d859c9d03dd8d5123ca44343211c7c72bf15a51977082a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/cellar/0.1.3/cellar-x86_64-apple-darwin.tar.xz"
-      sha256 "af6742fffdf0c811edf74b705908947cca807c6485a79c0d6ffa57db001371fb"
+      url "https://github.com/stevedylandev/andromeda/releases/download/cellar/0.1.4/cellar-x86_64-apple-darwin.tar.xz"
+      sha256 "64c8811856337120f53609189bf839e8e22f107bf848afb493319cb65a11d194"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/cellar/0.1.3/cellar-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c4b8ed011c5f0cb8766ca9d5ef52b98d5669a6275fc9eb8cedce6021c130cb9c"
+      url "https://github.com/stevedylandev/andromeda/releases/download/cellar/0.1.4/cellar-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9e0bd51a047ee26bdd9b37852828a745bc9855601898f0a70c09c7fc21bf6fb9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/cellar/0.1.3/cellar-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "17cf19b52896db11002acbf0ee5547355e7414fbc796d8a86e4f1f7ef930b474"
+      url "https://github.com/stevedylandev/andromeda/releases/download/cellar/0.1.4/cellar-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c8f7a1cc2f99149155f7a00845e9892df298ee8a54df919b968856c5194a2526"
     end
   end
   license "MIT"
