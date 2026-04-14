@@ -1,25 +1,25 @@
 class Jotts < Formula
   desc "Minimal markdown note app"
   homepage "https://github.com/stevedylandev/andromeda"
-  version "0.1.2"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/jotts/0.1.2/jotts-aarch64-apple-darwin.tar.xz"
-      sha256 "bfddc6d0c8276beba7127f1f7f6e43857c68dc669945b584b6b229a622384625"
+      url "https://github.com/stevedylandev/andromeda/releases/download/jotts/0.2.0/jotts-aarch64-apple-darwin.tar.xz"
+      sha256 "b6540bc8049c3d19218737ec4e9a24e771265d1eb0dcb7e0c9d930e438248b6b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/jotts/0.1.2/jotts-x86_64-apple-darwin.tar.xz"
-      sha256 "4218dabc132113ebc631d96a967f774311b95d2f688a775335693538b7c7a015"
+      url "https://github.com/stevedylandev/andromeda/releases/download/jotts/0.2.0/jotts-x86_64-apple-darwin.tar.xz"
+      sha256 "04d2dabe8a21c31435e6d27056b9c017de13f25a4b4d602ee3128bffdbb82841"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/jotts/0.1.2/jotts-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a6e8e5b42acbf139a51847b988c80ddb512b14002763c4c659f916dd293eac14"
+      url "https://github.com/stevedylandev/andromeda/releases/download/jotts/0.2.0/jotts-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7b5ad2dbe2784fa247ad097e13d4ec1d584c97a8b02224f6e9028a4af35d8ca7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/jotts/0.1.2/jotts-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "86bde87175320d9cbe0bf0bdf186a47f76e66a544add256bb903cfc12c6b13cd"
+      url "https://github.com/stevedylandev/andromeda/releases/download/jotts/0.2.0/jotts-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "bc478c1c0a34425d2abd50606e93871bbe5def3cdbbe8436027040996e1361ff"
     end
   end
   license "MIT"
