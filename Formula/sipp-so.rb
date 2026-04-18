@@ -1,25 +1,25 @@
 class SippSo < Formula
   desc "Minimal code sharing - single binary for web server, CLI, and TUI"
   homepage "https://sipp.so"
-  version "0.1.6"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/sipp-so/0.1.6/sipp-so-aarch64-apple-darwin.tar.xz"
-      sha256 "e5fd36dd12611df968cd49f58c244e1625d0df3508be0c59bc8940c404735bfc"
+      url "https://github.com/stevedylandev/andromeda/releases/download/sipp-so/0.2.0/sipp-so-aarch64-apple-darwin.tar.xz"
+      sha256 "29fff2945d6ade6c0101fb2403525e1d80e378c3137d503cefeb293f18653670"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/sipp-so/0.1.6/sipp-so-x86_64-apple-darwin.tar.xz"
-      sha256 "6a9eb59b484e62ea662556385fa80498eb796b3c696aeea588179be422aaea4a"
+      url "https://github.com/stevedylandev/andromeda/releases/download/sipp-so/0.2.0/sipp-so-x86_64-apple-darwin.tar.xz"
+      sha256 "b5ede166dcff6784633b37fec7bd1d949adc95c9d8b502865d08b6ae66aa83f0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/sipp-so/0.1.6/sipp-so-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "62d1795e63dbb0f3276326088c7ffeee5505d3df4bb0ad6620c8be1070bbe4b8"
+      url "https://github.com/stevedylandev/andromeda/releases/download/sipp-so/0.2.0/sipp-so-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ce328a675e4b13548087b0ddae431c3c064e107447b1c8622ef31a4cd2c57302"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/sipp-so/0.1.6/sipp-so-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "03c1d8f649f5d5300f29fbf7744c767aef323e75f34bb142739fa1d4aedbd8aa"
+      url "https://github.com/stevedylandev/andromeda/releases/download/sipp-so/0.2.0/sipp-so-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "6a760488c11c1fed26cf4149b7ddff160bd706171ef42632f3305575d3d056b8"
     end
   end
   license "MIT"
