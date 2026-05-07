@@ -1,25 +1,25 @@
 class Bullets < Formula
   desc "Minimal RSS TUI"
   homepage "https://github.com/stevedylandev/bullets"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/bullets/releases/download/v0.1.0/bullets-aarch64-apple-darwin.tar.xz"
-      sha256 "f8b19baa07ebcba9967e1b916489ef897eafacb666dd08c8abea141efcb62ecb"
+      url "https://github.com/stevedylandev/bullets/releases/download/v0.1.1/bullets-aarch64-apple-darwin.tar.xz"
+      sha256 "f551909badab8375fc04c231c3218f918943ddac38ffd0ab51cb68d816413203"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/bullets/releases/download/v0.1.0/bullets-x86_64-apple-darwin.tar.xz"
-      sha256 "901a2db6e3e1e3ec280e2847c91ec710776a9c8b459fc96b97624c5cd86c977c"
+      url "https://github.com/stevedylandev/bullets/releases/download/v0.1.1/bullets-x86_64-apple-darwin.tar.xz"
+      sha256 "16ffb2289808464370f4d0c1de833beddc356676915895fc5d940920a96b0521"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/bullets/releases/download/v0.1.0/bullets-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "84431123363ff393d676cc7e94bd7a8d018a5fded947facb52c03da07d6d7d56"
+      url "https://github.com/stevedylandev/bullets/releases/download/v0.1.1/bullets-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a02548a1dde465b06904d9fe8f5426d15e6149b3b4faee81e21c4f4d5da5ee4d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/bullets/releases/download/v0.1.0/bullets-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c64b0b4e3dfc5766b38ec5dde693c4d85faa657f0f0288e357ca1e89103eb6c2"
+      url "https://github.com/stevedylandev/bullets/releases/download/v0.1.1/bullets-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "110cb7dc996c799ef8c5ef97cd8c5451ce60c738e604a57cd9da3fc3c96e8af9"
     end
   end
   license "MIT"
