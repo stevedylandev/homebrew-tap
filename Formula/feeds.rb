@@ -1,25 +1,25 @@
 class Feeds < Formula
   desc "Minimal RSS feed reader"
   homepage "https://github.com/stevedylandev/andromeda"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/feeds/0.2.0/feeds-aarch64-apple-darwin.tar.xz"
-      sha256 "071e819d14768828023e11b382ebb4d80676b9371136b57506f52575e3c109cc"
+      url "https://github.com/stevedylandev/andromeda/releases/download/feeds/0.3.0/feeds-aarch64-apple-darwin.tar.xz"
+      sha256 "d46a08208a98dc37ceb9ca0efc9e565bb6ffae518f28a64d914eeb9fa2fb4835"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/feeds/0.2.0/feeds-x86_64-apple-darwin.tar.xz"
-      sha256 "b636a7121c1800a7b2edbf5bd9697dbe2c1a596886e546c3ba547fae060517ed"
+      url "https://github.com/stevedylandev/andromeda/releases/download/feeds/0.3.0/feeds-x86_64-apple-darwin.tar.xz"
+      sha256 "b2c6b86181be491cfca78dbfac14c8007785db67d15864548342ce160dbe1e42"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/andromeda/releases/download/feeds/0.2.0/feeds-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5482169e8b7ac5cc03e0e245c55ada0ba484e56d286d622982d71b5c7b8e7142"
+      url "https://github.com/stevedylandev/andromeda/releases/download/feeds/0.3.0/feeds-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8b89d3e0dcdfeef690f233c68c20b2b1b9f03a5c8e3e1947b492f442434b5210"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/andromeda/releases/download/feeds/0.2.0/feeds-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "50400750ec420c3db69cad812bb8b8c2f5dea23c7a98f30b43f9146009923bc7"
+      url "https://github.com/stevedylandev/andromeda/releases/download/feeds/0.3.0/feeds-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d55b213c20f66a8ad93ee85a78388935208159db556ef050fd74aaef68d5c974"
     end
   end
   license "MIT"
