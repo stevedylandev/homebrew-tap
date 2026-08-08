@@ -1,25 +1,25 @@
 class Cielago < Formula
   desc "API Client TUI in Rust"
   homepage "https://github.com/stevedylandev/cielago"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.1/cielago-aarch64-apple-darwin.tar.xz"
-      sha256 "ff497ecba7b0e75dd019f9ee1f11862c382ea3c3269fd7674f59a18866fed2c9"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.2/cielago-aarch64-apple-darwin.tar.xz"
+      sha256 "c67d604f865a37f2001e7f6cdb656b3894499e11c9a2723eacbe263fdacd381f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.1/cielago-x86_64-apple-darwin.tar.xz"
-      sha256 "38c1d24380867fc1eea09d42ec9086d9de5562075f004efebdd9aee549c958a9"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.2/cielago-x86_64-apple-darwin.tar.xz"
+      sha256 "e358abc67b9e15c2d5010841ed687758bfc70a164dd2b2495caee255fce4a051"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.1/cielago-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "413020a7198d14f4d6849df5fb4c3d14271700bfe5e47f306399bcc4b45a2ea5"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.2/cielago-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9f72d28d8d97643b165dcb3514b22e9f9c4ce522e95a3e23616e5795f80b4c20"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.1/cielago-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0b1f1f022768dce9a78674a5452b34b3ea2956bd7815c5d9980bd05a745512ab"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.2/cielago-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "504e34cb407d7ad6e1e87c00867e82d72ed2f6ddc7804cd76513416f3a3f5ab2"
     end
   end
 
