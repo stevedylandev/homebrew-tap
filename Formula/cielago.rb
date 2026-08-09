@@ -1,27 +1,28 @@
 class Cielago < Formula
-  desc "API Client TUI in Rust"
+  desc "Like Postman but actually works"
   homepage "https://github.com/stevedylandev/cielago"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.2/cielago-aarch64-apple-darwin.tar.xz"
-      sha256 "c67d604f865a37f2001e7f6cdb656b3894499e11c9a2723eacbe263fdacd381f"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.3/cielago-aarch64-apple-darwin.tar.xz"
+      sha256 "78ff2d12b167e8554e931a7dd55bd678ba81dbf5abc55ba96e9d006fef5da2fa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.2/cielago-x86_64-apple-darwin.tar.xz"
-      sha256 "e358abc67b9e15c2d5010841ed687758bfc70a164dd2b2495caee255fce4a051"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.3/cielago-x86_64-apple-darwin.tar.xz"
+      sha256 "a81c20fec325b364cc6df3bcf5c2cc3b9a88b3e2d4e1cef0b6a5472ce72c6e13"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.2/cielago-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9f72d28d8d97643b165dcb3514b22e9f9c4ce522e95a3e23616e5795f80b4c20"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.3/cielago-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "842e196f5bec59fe6bb48743ee624bd7f3367359ef08c40eaac64cbe7683e542"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.2/cielago-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "504e34cb407d7ad6e1e87c00867e82d72ed2f6ddc7804cd76513416f3a3f5ab2"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.3/cielago-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "18f0e949eed1189917f3b4ed25ac9d6857cfccd0e74e47df9eb138b1316cb476"
     end
   end
+  license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
