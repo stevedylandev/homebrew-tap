@@ -1,25 +1,25 @@
 class Cielago < Formula
   desc "Like Postman but actually works"
   homepage "https://github.com/stevedylandev/cielago"
-  version "0.1.3"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.3/cielago-aarch64-apple-darwin.tar.xz"
-      sha256 "78ff2d12b167e8554e931a7dd55bd678ba81dbf5abc55ba96e9d006fef5da2fa"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.2.0/cielago-aarch64-apple-darwin.tar.xz"
+      sha256 "cf13e894ed9c05f7113421e726ad3c8d056f7fc743205fc015198f7581308d47"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.3/cielago-x86_64-apple-darwin.tar.xz"
-      sha256 "a81c20fec325b364cc6df3bcf5c2cc3b9a88b3e2d4e1cef0b6a5472ce72c6e13"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.2.0/cielago-x86_64-apple-darwin.tar.xz"
+      sha256 "ead537f2aa49ea77f9ec1c702bb616e1f7d4510ef6cd86f557cdbf060ec34d5e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.3/cielago-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "842e196f5bec59fe6bb48743ee624bd7f3367359ef08c40eaac64cbe7683e542"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.2.0/cielago-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e03d23533eec8606c2df48ee26fb2ef65eea03441e7363e202f36e8b5a397d42"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.1.3/cielago-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "18f0e949eed1189917f3b4ed25ac9d6857cfccd0e74e47df9eb138b1316cb476"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.2.0/cielago-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ab11c836225a3e88ac756f3dceab4f0ae84fde1bf3a0e88125ec5049c0d05405"
     end
   end
   license "MIT"
@@ -48,10 +48,18 @@ class Cielago < Formula
   end
 
   def install
-    bin.install "cielago" if OS.mac? && Hardware::CPU.arm?
-    bin.install "cielago" if OS.mac? && Hardware::CPU.intel?
-    bin.install "cielago" if OS.linux? && Hardware::CPU.arm?
-    bin.install "cielago" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "cielago"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "cielago"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "cielago"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "cielago"
+    end
 
     install_binary_aliases!
 
