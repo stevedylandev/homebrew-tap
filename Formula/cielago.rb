@@ -1,25 +1,25 @@
 class Cielago < Formula
   desc "Like Postman but actually works"
   homepage "https://github.com/stevedylandev/cielago"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.2.0/cielago-aarch64-apple-darwin.tar.xz"
-      sha256 "cf13e894ed9c05f7113421e726ad3c8d056f7fc743205fc015198f7581308d47"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.3.0/cielago-aarch64-apple-darwin.tar.xz"
+      sha256 "021b5e906f7891ce3da89987080013dac2e89e494f8067463c850112dbce643e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.2.0/cielago-x86_64-apple-darwin.tar.xz"
-      sha256 "ead537f2aa49ea77f9ec1c702bb616e1f7d4510ef6cd86f557cdbf060ec34d5e"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.3.0/cielago-x86_64-apple-darwin.tar.xz"
+      sha256 "6c61244401ae27187d635bfb20d292c7c8e2f8677d9a43efd47fbbe4d0beee7f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.2.0/cielago-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e03d23533eec8606c2df48ee26fb2ef65eea03441e7363e202f36e8b5a397d42"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.3.0/cielago-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2a52f1bd32b26662cc7fb9fc487483e9fa7e3c37e1d28a7ceb125975720b0625"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/cielago/releases/download/v0.2.0/cielago-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ab11c836225a3e88ac756f3dceab4f0ae84fde1bf3a0e88125ec5049c0d05405"
+      url "https://github.com/stevedylandev/cielago/releases/download/v0.3.0/cielago-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "510c716a3e75e888cbbb609087d34a7f607e7e9ee5aa6276ac8f5f6cdfa24ada"
     end
   end
   license "MIT"
